@@ -1,0 +1,66 @@
+Gab Christmas hw
+
+ g++ main.cpp scanner.cpp testScanner.cpp testTree.cpp parser.cpp checkVariables.cpp -o P3
+ ./P3 input7
+
+
+**The only files you need to change are checkVariables.cpp and checkVariables.hpp**
+
+A binary tree is created using the tokens we created
+This binary tree contains all the infromation of the original code, stored into nodes
+
+You must verify that the variable usage in the code is valid by examining the binary tree
+
+To examine the binary tree you should
+1. move through the tree preorder. Variables are usually set on the left branches of the treee, this will let you find the set variables of a block before examining the contents of the block
+2. Find the global variables first, then the local variables.
+3. Use a stack to store the local variables. You can easily drop off the latest variables from the stack when exiting a block and still keep the old variables from previous blocks still active.
+4. Use a counter to count the amount of variables in each block. You can make this a stack so new counters can be added as you enter new blocks, adn popped off as you exit.
+When you finish traversing the tree all satcks should have all thier data popped off and be empty
+
+When a variable is intialized, check if it's name is already in use within the scope
+When a variable is used, check if it has been itinalized yet
+You can call exit(0); if a variable has been used incorrectly
+
+
+
+
+Hints:
+
+TreeExample.png is a picture to help visualize where the blocks are in the tree
+
+You can check testTree.cpp to see how preorder traversal is used to print the tree to a file
+
+To access the tree you should get the root node adn then move left or right off of it
+A node has:
+        String name
+        list<token> Data->
+                TypeID TID
+                String content
+                int lineNum
+        node* left/right child
+
+
+To loop through the data(the tokens stored inside) of a node:
+
+list<token>::iterator i;
+for (i = data.begin(); i != data.end(); ++i){
+        //do somthing with i
+        //while inside the loop you can use ++i; to move to the next token
+}
+
+
+If you want to add something to a stack use stack.push(something)
+If you want to check what the latest thing oyu added to the stack is someting = stack.top()
+To remove lastest item from a stack stack.pop()
+
+IF you need to check through all the tiems in a stack the easiest way is to clone the stack to a new variable then use .top() and .pop() to read all the information from the clone until empty
+
+My BIGGEST HINT- 
+        Print out when you find new variables
+        when you find variables being used
+        when you eneter new nodes (maybe when you exit a node and return back up the tree?)
+        when you check a token on a node
+This will help you debug and see what your code does (or may not be doing) when you test
+
+Check the BNF to figure out when variables would be used, and what keywords may be used around them

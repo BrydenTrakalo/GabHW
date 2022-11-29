@@ -1,0 +1,5 @@
+var x : 1 ;
+begin
+  var x : 2 ;
+  print ( x ) ;
+end

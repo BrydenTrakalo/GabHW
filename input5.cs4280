@@ -1,0 +1,6 @@
+var x : 1 ;
+var y : 2 ;
+var x : 3 ;
+begin
+  print ( x ) ;
+end

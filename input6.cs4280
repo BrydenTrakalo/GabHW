@@ -1,0 +1,7 @@
+var x : 1 ;
+var y : 2 ;
+begin
+  var x : 3 ;
+  print ( x ) ;
+  print ( z ) ;
+end

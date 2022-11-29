@@ -1,0 +1,9 @@
+var x : 1 ;
+var y : 2 ;
+begin
+  begin 
+   var w : 4 ;
+print ( w ) ;
+  end
+print ( w ) ;
+end

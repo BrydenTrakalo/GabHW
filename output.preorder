@@ -1,0 +1,233 @@
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+  <block>: begin end 
+    <vars>: var ID: y : # 1 ; 
+    <stats>: 
+      <stat>: 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+  <block>: begin end 
+    <vars>: var ID: y : # 1 ; 
+    <stats>: 
+      <stat>: 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+  <block>: begin end 
+    <stats>: 
+      <stat>: ; 
+        <in>: scan ID: x 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+  <block>: begin end 
+    <vars>: var ID: x : # 2 ; 
+    <stats>: 
+      <stat>: ; 
+        <out>: print ( ) 
+          <exp>: 
+            <A>: 
+              <N>: 
+                <A>: 
+                  <R>: ID: x 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+    <vars>: var ID: y : # 2 ; 
+  <block>: begin end 
+    <vars>: var ID: z : # 3 ; 
+    <stats>: 
+      <stat>: ; 
+        <out>: print ( ) 
+          <exp>: 
+            <A>: 
+              <N>: 
+                <A>: 
+                  <R>: ID: x 
+      <mStat>: 
+        <stat>: ; 
+          <out>: print ( ) 
+            <exp>: 
+              <A>: 
+                <N>: 
+                  <A>: 
+                    <R>: ID: y 
+        <mStat>: 
+          <stat>: ; 
+            <out>: print ( ) 
+              <exp>: 
+                <A>: 
+                  <N>: 
+                    <A>: 
+                      <R>: ID: z 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+    <vars>: var ID: y : # 2 ; 
+  <block>: begin end 
+    <vars>: var ID: z : # 3 ; 
+    <stats>: 
+      <stat>: 
+        <block>: begin end 
+          <vars>: var ID: x : # 4 ; 
+          <stats>: 
+            <stat>: ; 
+              <out>: print ( ) 
+                <exp>: ++ 
+                  <A>: 
+                    <N>: 
+                      <A>: 
+                        <R>: ID: x 
+                  <exp>: ++ 
+                    <A>: 
+                      <N>: 
+                        <A>: 
+                          <R>: ID: y 
+                    <exp>: 
+                      <A>: 
+                        <N>: 
+                          <A>: 
+                            <R>: ID: z 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+    <vars>: var ID: y : # 2 ; 
+      <vars>: var ID: x : # 3 ; 
+  <block>: begin end 
+    <stats>: 
+      <stat>: ; 
+        <out>: print ( ) 
+          <exp>: 
+            <A>: 
+              <N>: 
+                <A>: 
+                  <R>: ID: x 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+    <vars>: var ID: y : # 2 ; 
+  <block>: begin end 
+    <vars>: var ID: x : # 3 ; 
+    <stats>: 
+      <stat>: ; 
+        <out>: print ( ) 
+          <exp>: 
+            <A>: 
+              <N>: 
+                <A>: 
+                  <R>: ID: x 
+      <mStat>: 
+        <stat>: ; 
+          <out>: print ( ) 
+            <exp>: 
+              <A>: 
+                <N>: 
+                  <A>: 
+                    <R>: ID: z 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+    <vars>: var ID: y : # 2 ; 
+  <block>: begin end 
+    <stats>: 
+      <stat>: 
+        <block>: begin end 
+          <vars>: var ID: w : # 4 ; 
+          <stats>: 
+            <stat>: ; 
+              <out>: print ( ) 
+                <exp>: 
+                  <A>: 
+                    <N>: 
+                      <A>: 
+                        <R>: ID: w 
+      <mStat>: 
+        <stat>: ; 
+          <out>: print ( ) 
+            <exp>: 
+              <A>: 
+                <N>: 
+                  <A>: 
+                    <R>: ID: w 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+    <vars>: var ID: y : # 2 ; 
+  <block>: begin end 
+    <stats>: 
+      <stat>: 
+        <block>: begin end 
+          <vars>: var ID: w : # 4 ; 
+          <stats>: 
+            <stat>: ; 
+              <out>: print ( ) 
+                <exp>: 
+                  <A>: 
+                    <N>: 
+                      <A>: 
+                        <R>: ID: w 
+      <mStat>: 
+        <stat>: ; 
+          <out>: print ( ) 
+            <exp>: 
+              <A>: 
+                <N>: 
+                  <A>: 
+                    <R>: ID: w 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+    <vars>: var ID: y : # 2 ; 
+  <block>: begin end 
+    <stats>: 
+      <stat>: 
+        <block>: begin end 
+          <vars>: var ID: w : # 4 ; 
+          <stats>: 
+            <stat>: ; 
+              <out>: print ( ) 
+                <exp>: 
+                  <A>: 
+                    <N>: 
+                      <A>: 
+                        <R>: ID: w 
+      <mStat>: 
+        <stat>: ; 
+          <out>: print ( ) 
+            <exp>: 
+              <A>: 
+                <N>: 
+                  <A>: 
+                    <R>: ID: w 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+    <vars>: var ID: y : # 2 ; 
+  <block>: begin end 
+    <stats>: 
+      <stat>: 
+        <block>: begin end 
+          <vars>: var ID: w : # 4 ; 
+          <stats>: 
+            <stat>: ; 
+              <out>: print ( ) 
+                <exp>: 
+                  <A>: 
+                    <N>: 
+                      <A>: 
+                        <R>: ID: w 
+      <mStat>: 
+        <stat>: ; 
+          <out>: print ( ) 
+            <exp>: 
+              <A>: 
+                <N>: 
+                  <A>: 
+                    <R>: ID: w 
+<program>: 
+  <vars>: var ID: x : # 1 ; 
+    <vars>: var ID: y : # 2 ; 
+  <block>: begin end 
+    <stats>: 
+      <stat>: ; 
+        <in>: scan ID: x 
+      <mStat>: 
+        <stat>: 
+          <block>: begin end 
+            <vars>: var ID: w : # 3 ; 
+            <stats>: 
+              <stat>: ; 
+                <in>: scan ID: w 
+        <mStat>: 
+          <stat>: ; 
+            <in>: scan ID: w 

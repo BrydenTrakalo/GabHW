@@ -1,0 +1,9 @@
+var x : 1 ;
+var y : 2 ;
+begin
+  var z : 3 ;
+  begin 
+    var x : 4 ;
+    print ( x ++ y ++ z ) ;
+  end
+end
